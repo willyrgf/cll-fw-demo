@@ -3,6 +3,7 @@ module github.com/willyrgf/cll-fw-demo
 go 1.18
 
 require (
+	github.com/ethereum/go-ethereum v1.10.26
 	github.com/gagliardetto/solana-go v1.8.2
 	github.com/smartcontractkit/chainlink v1.11.0
 	github.com/smartcontractkit/chainlink-solana v1.0.2
@@ -28,7 +29,6 @@ require (
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.1.0 // indirect
 	github.com/dfuse-io/logging v0.0.0-20210109005628-b97a57253f70 // indirect
 	github.com/edsrzf/mmap-go v1.0.0 // indirect
-	github.com/ethereum/go-ethereum v1.10.26 // indirect
 	github.com/fatih/color v1.13.0 // indirect
 	github.com/flynn/noise v0.0.0-20180327030543-2492fe189ae6 // indirect
 	github.com/fsnotify/fsnotify v1.5.4 // indirect

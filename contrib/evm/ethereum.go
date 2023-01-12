@@ -8,7 +8,7 @@ import (
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/smartcontractkit/chainlink/core/assets"
 	"github.com/smartcontractkit/chainlink/core/chains/evm/client"
-	"github.com/willyrgf/cll-fw-demo/pkg/infra/integration"
+	"github.com/willyrgf/cll-fw-demo/pkg/integration"
 )
 
 type Provider struct {

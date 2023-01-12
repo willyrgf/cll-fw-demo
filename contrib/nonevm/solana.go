@@ -6,7 +6,7 @@ import (
 
 	"github.com/gagliardetto/solana-go"
 	"github.com/smartcontractkit/chainlink-solana/pkg/solana/client"
-	"github.com/willyrgf/cll-fw-demo/pkg/infra/integration"
+	"github.com/willyrgf/cll-fw-demo/pkg/integration"
 )
 
 type Provider struct {
