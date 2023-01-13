@@ -4,16 +4,20 @@ import (
 	"context"
 
 	"github.com/willyrgf/cll-fw-demo/contrib/network"
+	"github.com/willyrgf/cll-fw-demo/pkg/infra/logger"
 	"github.com/willyrgf/cll-fw-demo/pkg/integration"
+	"go.opentelemetry.io/otel/trace"
 )
 
 // run the same operation in n networks
 func main() {
+	logger := logger.New(logger.WithTrace(trace.NewNoopTracerProvider().Tracer("general")))
 	ctx := context.TODO()
 
 	networkToRun := []string{"solana", "ethereum"}
 
 	for _, networkName := range networkToRun {
+		logger.Infof("main(): runSomethingPerNetwork(ctx, networkName: %+v)", networkName)
 		runSomethingPerNetwork(ctx, networkName)
 	}
 }

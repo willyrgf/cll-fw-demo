@@ -8,7 +8,7 @@ import (
 )
 
 type Logger interface {
-	// Infof(args ...any)
+	Infof(args ...any)
 	// Warnf(args ...any)
 	// Debugf(args ...any)
 	// ... all the methods for a log
@@ -34,5 +34,9 @@ func New(opts ...Option) Logger {
 		opt(&l)
 	}
 
-	return l
+	return &l
+}
+
+func (l *logger) Infof(args ...any) {
+	l.logger.Printf("%+v", args...)
 }
