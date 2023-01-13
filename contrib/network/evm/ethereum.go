@@ -15,9 +15,9 @@ type Provider struct {
 	client client.Client
 }
 
-func NewProvider(c *client.Client) Provider {
-	return Provider{
-		client: &client.NullClient{},
+func NewProvider(c client.Client) *Provider {
+	return &Provider{
+		client: c,
 	}
 }
 

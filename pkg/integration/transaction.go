@@ -1,10 +1,14 @@
 package integration
 
 type Transaction struct {
-	Body map[string]any // any generic type to be translate by network
+	// any generic type to be translate by network,
+	// maybe it can be a generic based on provider
+	Body map[string]any
 }
 
 type TransactionResponse struct {
-	Body map[string]any // any generic type to be translate by network
+	// any generic type to be translate by network,
+	// maybe it can be a generic based on provider
+	Body map[string]any
 	Err  error
 }

@@ -13,8 +13,8 @@ type Provider struct {
 	client *client.Client
 }
 
-func NewProvider(c *client.Client) Provider {
-	return Provider{
+func NewProvider(c *client.Client) *Provider {
+	return &Provider{
 		client: c,
 	}
 }
